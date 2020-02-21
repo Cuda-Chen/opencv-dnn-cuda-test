@@ -47,7 +47,7 @@ int main()
 	}
 	auto end = std::chrono::steady_clock::now();
 
-	std::chrono::milliseconds timeTaken = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
+	std::chrono::milliseconds timeTaken = std::chrono::duration_cast<std::chrono::milliseconds>((end - start) / 100.0);
 	std::cout << "Time per inference: " << timeTaken.count() << " ms" << std::endl
 		<< "FPS: " << 1000.0 / (timeTaken.count()) << std::endl;
 

@@ -30,6 +30,7 @@
 *.exe
 *.out
 *.app
+opencv_dnn_cuda_test_cpp
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
